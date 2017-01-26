@@ -81,5 +81,21 @@ $('.js--nav-icon').click(function(){
   }
 });
 
+/*  Maps */
+  var map = new GMaps({
+    div: '.map',
+    lat: 39.7642548,
+    lng: -104.9,
+    zoom:12
+  });
+
+  map.addMarker({
+  lat: 39.7642548,
+  lng: -104.9951954,
+  title: 'Denver',
+  infoWindow: {
+  content: '<p>Denver HQ</p>'
+  }
+});
 
 });

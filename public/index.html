@@ -310,69 +310,74 @@
         </div>
       </div>
     </section>
-    <section class="section-form">
-      <div class="row">
-        <h2>We're happy to hear from you</h2>
-      </div>
-      <div class="row">
-        <form method="post" action="#">
-          <div class="row">
-            <div class="col span-1-of-3">
-            <label for="name">Name</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="text" name="name" id="name" placeholder="Your Name" required>
-            </div>
 
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-            <label for="email">Email</label>
+    <div class="map-box">
+      <div class="map"></div>
+
+      <div class="form-box">
+        <div class="row">
+          <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+          <form method="post" action="#">
+            <div class="row">
+              <div class="col span-1-of-3">
+              <label for="name">Name</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+              </div>
+
             </div>
-            <div class="col span-2-of-3">
-              <input type="email" name="email" id="email" placeholder="Your email" required>
+            <div class="row">
+              <div class="col span-1-of-3">
+              <label for="email">Email</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-            <label for="find-us">How did you find us?</label>
+            <div class="row">
+              <div class="col span-1-of-3">
+              <label for="find-us">How did you find us?</label>
+              </div>
+              <div class="col span-2-of-3">
+                <select name="find-us" id="find-us">
+                  <option value="friends" selected>Friends</option>
+                  <option value="search">Search Engine</option>
+                  <option value="ad">Advertisement</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
             </div>
-            <div class="col span-2-of-3">
-              <select name="find-us" id="find-us">
-                <option value="friends" selected>Friends</option>
-                <option value="search">Search Engine</option>
-                <option value="ad">Advertisement</option>
-                <option value="other">Other</option>
-              </select>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>Newsletter?</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="checkbox" name="news" id="news" checked> yes please
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label>Newsletter?</label>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>Drop us a line</label>
+              </div>
+              <div class="col span-2-of-3">
+                <textarea name="message" placeholder="Your message"></textarea>
+              </div>
             </div>
-            <div class="col span-2-of-3">
-              <input type="checkbox" name="news" id="news" checked> yes please
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>&nbsp;</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="submit" value="Send it">
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label>Drop us a line</label>
-            </div>
-            <div class="col span-2-of-3">
-              <textarea name="message" placeholder="Your message"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label>&nbsp;</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="submit" value="Send it">
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </section>
+    </div>
     <footer>
       <div class="row">
         <div class="col span-1-of-2">
@@ -396,6 +401,7 @@
       </div>
       <div class="row">
         <p> Copyright &copy; 2017 by Omnifood.  All rights reserved. </p>
+
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -403,7 +409,9 @@
     <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3"></script>
     <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3(html5shiv.min.js+html5shiv-printshiv.min.js),selectivizr@1.0.3b"></script>
     <script src= "vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHuNxaPdbe3ibBtqu1mRct253V52DzEes"></script>
     <script src="resources/js/script.js"></script>
+    <script src="resources/js/gmaps.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
